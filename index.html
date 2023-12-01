@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taxi || Home</title>
+    <!-- fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./css/carousel.min.css" />
+    <link rel="stylesheet" href="./css/carousel.theme.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
+
+  <!-- oncontextmenu="return false" -->
+  <body>
+    <!-- sub header -->
+    <header class="sub__header" id="subHeader">
+      <!-- <div class="sub__navbar">
+        <div class="sub__navbar__container custom__container">
+          <div class="sub__nav__list">
+            <h5>Welcome To Taxi Services</h5>
+          </div>
+          <div class="sub__nav__list">
+            <ul class="contacts">
+              <li class="contact__list">
+                <div class="contact__item">
+                  <i class="fa-solid fa-phone ic_social"></i>
+                  <h5>+91 &nbsp; 9876543210</h5>
+                </div>
+              </li>
+              <li class="contact__list">
+                <div class="contact__item">
+                  <span class="leftBord"></span>
+                </div>
+              </li>
+              <li class="contact__list">
+                <div class="contact__item">
+                  <i class="fa-regular fa-envelope ic_social"></i>
+                  <h5>info@taxi@.com</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="sub__nav__list">
+            <ul class="social__media">
+              <li class="social__media__item">
+                <i class="fa-brands fa-facebook ic_social"></i>
+              </li>
+              <li class="social__media__item">
+                <i class="fa-brands fa-square-twitter ic_social"></i>
+              </li>
+              <li class="social__media__item">
+                <i class="fa-brands fa-instagram ic_social"></i>
+              </li>
+              <li class="social__media__item">
+                <i class="fa-brands fa-linkedin-in ic_social"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </header>
+    <!-- main header -->
+    <div class="main__header top__nav" id="mainHeader">
+      <!-- <nav class="main__navbar">
+        <div class="navbar__container custom__container">
+          <input type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li><a class="nav__active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <h1 class="logo">Taxi</h1>
+        </div>
+      </nav> -->
+    </div>
+    <!-- banner section -->
+    <section class="banner__box">
+      <div class="banner__wrapper">
+        <div class="banner__container custom__container">
+          <div class="banner__row">
+            <div class="banner__item">
+              <div class="banner__content">
+                <ul class="banner__content__list">
+                  <li class="banner__content__item">
+                    <h5>24/7 online Taxi Booking Services</h5>
+                  </li>
+                  <li class="banner__content__item">
+                    <h1>
+                      Get Best Online Taxi<span class="ban__title"
+                        >For Your Ride</span
+                      >
+                    </h1>
+                  </li>
+                  <li class="banner__content__item">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.Lorem Ipsum has been the industry's
+                      standard dummy text.
+                    </p>
+                  </li>
+
+                  <li class="banner__content__item">
+                    <div class="booking__wrapper">
+                      <button
+                        class="tx-btn btn__active"
+                        onclick="window.location.href='booking.html'"
+                      >
+                        BOOK NOW
+                      </button>
+                      <button class="tx-btn">SEARCH VEHICLE</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="banner__item">
+              <!-- <div class="banner__img">
+                <img src="./assets/ban1.svg" alt="img_banner" />
+              </div> -->
+              <div class="booking__form__wrapper">
+                <div class="booking__form__container">
+                  <div class="taxi_form" id="bookingForm">
+                    <h2>Book Your Taxi Online</h2>
+                    <div class="form__user__details">
+                      <div class="form_user_item">
+                        <div class="form-item">
+                          <input type="text" id="username" required />
+                          <label for="username">Username</label>
+                        </div>
+                      </div>
+                      <div class="form_user_item">
+                        <div class="form-item">
+                          <input
+                            type="tel"
+                            id="phone"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                            required
+                          />
+                          <label for="phone">Mobile</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__user__details">
+                      <div class="form_user_item">
+                        <div class="form-item">
+                          <input type="text" id="startDestination" required />
+                          <label for="startDestination">Pickup</label>
+                        </div>
+                      </div>
+                      <div class="form_user_item">
+                        <div class="form-item">
+                          <input type="text" id="endDestination" required />
+                          <label for="endDestination">Drop</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__user__details">
+                      <div class="form_user_item">
+                        <div class="form-item">
+                          <input
+                            type="date"
+                            id="pickUpDate"
+                            name="date"
+                            placeholder=""
+                            required
+                          />
+                          <label
+                            for="pickUpDate"
+                            class="icon-label"
+                            id="datePickerIcon"
+                            >Pickup Date</label
+                          >
+                        </div>
+                      </div>
+                      <div class="form_user_item">
+                        <div class="form-item">
+                          <input
+                            type="time"
+                            id="pickupTime"
+                            name="time"
+                            required
+                          />
+                          <label
+                            for="pickupTime"
+                            class="icon-label"
+                            id="timePickerIcon"
+                            >Time</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                      <select id="tripType" name="tripType" required>
+                        <option value="oneWay">One Way</option>
+                        <option value="roundTrip">Round Trip</option>
+                        <option value="local">Local</option>
+                      </select>
+                      <label for="pickUpDate">Trip Type</label>
+                    </div>
+                    <div class="form-item">
+                      <button class="submit-btn" onclick="validateForm()">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- infinite scroll section  -->
+    <section class="customer__wrapper">
+      <div class="customer__container">
+        <div class="customer__row">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our services -->
+    <section class="services__wrapper">
+      <div class="custom__container">
+        <div class="services__row">
+          <div class="services__title">
+            <h5>OUR AWESOME SERVICES FIELDS</h5>
+            <h1>We Make Your Every Trip Comfortable</h1>
+          </div>
+          <div class="home-demo services__demo">
+            <div class="owl-carousel owl-theme services__carousel">
+              <div class="item services__item">
+                <div class="services__itemBox">
+                  <div class="services__item__title">
+                    <h3>AIRPORT TRANSFERS</h3>
+                  </div>
+                  <div class="service__item__img">
+                    <img src="./assets/airport.jpg" alt="img" />
+                  </div>
+                  <div class="services__item__desc">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                  <div class="services__btn">
+                    <button class="tx-btn svc-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item services__item">
+                <div class="services__itemBox">
+                  <div class="services__item__title">
+                    <h3>BUSINESS TRANSFERS</h3>
+                  </div>
+                  <div class="service__item__img">
+                    <img src="./assets/airport.jpg" alt="img" />
+                  </div>
+                  <div class="services__item__desc">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                  <div class="services__btn">
+                    <button class="tx-btn svc-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item services__item">
+                <div class="services__itemBox">
+                  <div class="services__item__title">
+                    <h3>EVENTS AND WEDDING</h3>
+                  </div>
+                  <div class="service__item__img">
+                    <img src="./assets/airport.jpg" alt="img" />
+                  </div>
+                  <div class="services__item__desc">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                  <div class="services__btn">
+                    <button class="tx-btn svc-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item services__item">
+                <div class="services__itemBox">
+                  <div class="services__item__title">
+                    <h3>DAILY OFFICE PICK</h3>
+                  </div>
+                  <div class="service__item__img">
+                    <img src="./assets/airport.jpg" alt="img" />
+                  </div>
+                  <div class="services__item__desc">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
+                  </div>
+                  <div class="services__btn">
+                    <button class="tx-btn svc-btn">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOW ITS WORKS SECTION -->
+    <section class="work__section">
+      <div class="work__wrapper">
+        <div class="custom__container">
+          <div class="work__row">
+            <div class="work__title">
+              <h1>How It Work</h1>
+            </div>
+            <div class="work__menu">
+              <div class="work__item">
+                <img src="./assets/cab1.svg" alt="img" />
+                <p>Select The Cab</p>
+              </div>
+              <div class="work__item">
+                <img src="./assets/ban2.svg" alt="img" />
+                <p>Book The Ride</p>
+              </div>
+              <div class="work__item">
+                <img src="./assets/cab3.svg" alt="img" />
+                <p>Enjoy The Ride</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Book now banner -->
+    <section class="book__section">
+      <div class="book__wrapper">
+        <div class="custom__container">
+          <div class="book__row">
+            <div class="book__item">
+              <h2>
+                Feel the luxury that is only made for you to enjoy the
+                <span class="b-cont">moments you desrve</span>
+              </h2>
+              <p>
+                You can Contact 24*7 with us via email,direct call to our
+                number, WhatsApp message
+              </p>
+            </div>
+            <div class="book__item">
+              <button class="tx-btn bk-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vehicle reserve banner -->
+    <section class="vehicle_reserve_section">
+      <div class="vehicle__wrapper">
+        <div class="custom__container">
+          <div class="vehicle__reserve__row">
+            <div class="vehicle__reserve__title">
+              <h1>Reserve the Vehicle You Desire</h1>
+            </div>
+            <div class="veh__res__ban__box">
+              <div class="vehicle__reserve__banner">
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/wagonR.webp" alt="" />
+                  <h6>wagon -R</h6>
+                  <div class="brd__bottom"></div>
+                  <p>04 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/dzire.webp" alt="" />
+                  <h6>Swift Dzire</h6>
+                  <div class="brd__bottom"></div>
+                  <p>04 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/honda_city.png" alt="" />
+                  <h6>Honda city</h6>
+                  <div class="brd__bottom"></div>
+                  <p>04 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/kia_carens.png" alt="" />
+                  <h6>Kia Carens</h6>
+                  <div class="brd__bottom"></div>
+                  <p>06 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img
+                    class="veh-img"
+                    src="./assets/corolla_altis.webp"
+                    alt=""
+                  />
+                  <h6>Corolla Altis</h6>
+                  <div class="brd__bottom"></div>
+                  <p>04 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/etios.webp" alt="" />
+                  <h6>Etios</h6>
+                  <div class="brd__bottom"></div>
+                  <p>04 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/bolero.webp" alt="" />
+                  <h6>Bolero</h6>
+                  <div class="brd__bottom"></div>
+                  <p>07 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/scorpio.webp" alt="" />
+                  <h6>Scorpio</h6>
+                  <div class="brd__bottom"></div>
+                  <p>07 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+                <div class="veh__res__item">
+                  <img class="veh-img" src="./assets/kia_carnival.gif" alt="" />
+                  <h6>Kia Carnival</h6>
+                  <div class="brd__bottom"></div>
+                  <p>07 Seater</p>
+                  <button class="tx-btn veh__res__btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service provide -->
+    <section class="service__provide__sec">
+      <div class="service__provide__wrapper">
+        <div class="custom__container">
+          <div class="service__provide__row">
+            <div class="svc__pde__item">
+              <img src="./assets/car_safe.jpg" alt="" />
+              <h2>Reliable & Safe</h2>
+              <p>
+                Let's embody your beautiful ideas togther, simplyfy the way you
+                visualise your next big things
+              </p>
+            </div>
+            <div class="svc__pde__item">
+              <img src="./assets/car_wifi.jpg" alt="" />
+              <h2>Free WiFi Connectivity</h2>
+              <p>
+                Let's embody your beautiful ideas togther, simplyfy the way you
+                visualise your next big things
+              </p>
+            </div>
+            <div class="svc__pde__item">
+              <img src="./assets/smooth_ride.jpg" alt="" />
+              <h2>luxurious Smooth Ride</h2>
+              <p>
+                Let's embody your beautiful ideas togther, simplyfy the way you
+                visualise your next big things
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why us choose -->
+    <section class="why__choose__sec">
+      <div class="why__choose__wrapper">
+        <div class="custom__container">
+          <div class="why__choose__row">
+            <div class="wy__chs_title">
+              <h1>WHY US</h1>
+            </div>
+            <div class="wy__choose__taxi">
+              <div class="wh__ch__txi__box">
+                <div class="ch__taxi__item">
+                  <h3>
+                    We offer the best experince with best affordable deals
+                  </h3>
+                  <p>
+                    End-to-End logistics solutions that drive your business
+                    forward. with a proven track record of excellence, we offer
+                    a wide range of services tailored to meat your unique
+                    shipping ,warehousing and distribution needs.
+                  </p>
+                </div>
+                <div class="ch__taxi__item">
+                  <img src="./assets/cab_safe.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="why__choose__taxi__points">
+              <div class="taxi__points__wrapper">
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Pick Up & Drop Off on Time</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Safe and Secure</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Optimized Travel Cost</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Pet Friendly</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Easy Booking with various Option</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Experinced & Certified Drivers</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Real Time Tracking & Wifi facility</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>24/7 Customer Support</h5>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Promosions an Discounts</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="taxi__points__item">
+                  <ul class="taxi__points__menu">
+                    <li class="txi__lst">
+                      <img src="./assets/map_arrow.svg" alt="" />
+                    </li>
+                    <li class="txi__lst">
+                      <h5>Clean and Well-Maintanence</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Taxi Standard screen -->
+    <section class="taxi__standard__sec">
+      <div class="taxi__standard__wrapper">
+        <div class="custom__container">
+          <div class="taxi__standard__row">
+            <div class="taxi__stand__item">
+              <div class="taxi__stand__icon">
+                <img src="./assets/reliability.png" alt="" />
+              </div>
+              <div class="taxi__stand__banner">
+                <h2>Reliability</h2>
+                <p>
+                  Transparent traffic Police verified Chauffeurs round the clock
+                  taxi availability
+                </p>
+              </div>
+            </div>
+            <div class="taxi__stand__item">
+              <div class="taxi__stand__icon">
+                <img src="./assets/price-tag.png" alt="" />
+              </div>
+              <div class="taxi__stand__banner">
+                <h2>Transparent Pricing</h2>
+                <p>
+                  No Garage Charges, No Hidden Cost, No Extra Luggage Charges
+                </p>
+              </div>
+            </div>
+            <div class="taxi__stand__item">
+              <div class="taxi__stand__icon">
+                <img src="./assets/quality.png" alt="" />
+              </div>
+              <div class="taxi__stand__banner">
+                <h2>Quality</h2>
+                <p>
+                  Well Trained Drivers, Well-Maintained Car Fleet On time
+                  Service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- elevate your journey -->
+
+    <section class="journey__sec">
+      <div class="journey__wrapper">
+        <div class="custom__container">
+          <div class="journey__row">
+            <div class="jouney__container">
+              <h4>Elevate Your Journey with Elegance</h4>
+              <button class="btn__bookNow">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="taxi__footer__sec" id="taxiFooter">
+      <!-- <footer class="taxi-footer">
+        <div class="custom__container">
+          <div class="taxi__footer__row">
+            <div class="taxi__footer__logo">
+              <h1>Taxi</h1>
+            </div>
+            <div class="ft__row">
+              <div class="ft__item">
+                <ul class="ft__menu">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Comming soon</a></li>
+                  <li><a href="#">Comming soon</a></li>
+                </ul>
+              </div>
+
+              <div class="ft__item">
+                <div class="ft__fresh__news">
+                  <div class="primary__input">
+                    <p>Get the freshest news from us</p>
+                    <div class="email__box">
+                      <label for="" class="contact__input">
+                        <input type="text" placeholder="Your Email Address" />
+                        <button type="button" class="tx-btn submit__btn">
+                          <span>Submit</span>
+                        </button>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ft__border">
+              <hr />
+            </div>
+
+            <div class="footer__copy__right">
+              <div class="ft__c_right">
+                <div class="ft__cpy__item">
+                  <ul class="ft__cpy__menu">
+                    <li><a href="#"> Terms &amp; Condition</a></li>
+                    <li><a href="#"> Privacy Policy</a></li>
+                    <li><a href="#">Legal</a></li>
+                  </ul>
+                </div>
+                <div class="ft__cpy__item">
+                  <p>
+                    Copyright &copy; 2022, All Right Reserved
+                    <a href="#">Ragu</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+    </section>
+
+    <!-- Jquery Js -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/carousel.min.js"></script>
+    <script src="./js/header_footer.js"></script>
+
+    <script>
+      // protect code
+      // document.addEventListener("contextmenu", (event) =>
+      //   event.preventDefault()
+      // );
+
+      // navbar active
+      $(document).ready(function () {
+        $(".menu-items li a").on("click", function () {
+          $(".menu-items li a").removeClass("nav__active");
+          $(this).addClass("nav__active");
+        });
+      });
+      // navbar scroll
+      var navBar = $(".top__nav");
+      var hdrHeight = $("header").height();
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > hdrHeight + 50) {
+          navBar.addClass("navScrolled");
+        } else {
+          navBar.removeClass("navScrolled");
+        }
+      });
+
+      // infinite scroll
+      $(document).ready(function () {
+        const slider = $(".slider");
+        const slideTrack = $(".slide-track");
+
+        let isHovering = false;
+
+        slider.on("mouseenter", function () {
+          isHovering = true;
+          slideTrack.css("animation-play-state", "paused");
+        });
+
+        slider.on("mouseleave", function () {
+          isHovering = false;
+          slideTrack.css("animation-play-state", "running");
+        });
+
+        // Optional: Automatically play the slider when the page loads
+        $(window).on("load", function () {
+          slideTrack.css("animation-play-state", "running");
+        });
+
+        // Optional: Pause the slider when it's out of the viewport
+        $(window).on("scroll", function () {
+          if (isElementInViewport(slider) && !isHovering) {
+            slideTrack.css("animation-play-state", "running");
+          } else {
+            slideTrack.css("animation-play-state", "paused");
+          }
+        });
+
+        function isElementInViewport(element) {
+          const rect = element[0].getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      });
+
+      //owl carousel
+      $(function () {
+        // Owl Carousel
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          items: 3,
+          loop: true,
+          dots: false,
+          nav: false,
+          autoplay: true,
+          lazyLoad: true,
+          smartSpeed: 10000,
+          animateIn: "fadeIn",
+          animateOut: "fadeOut",
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            1440: {
+              items: 3,
+            },
+          },
+        });
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [1000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+
+      // date time and set
+      $(document).ready(function () {
+        // Set current date
+        var currentDate = new Date().toISOString().split("T")[0];
+        $("#pickUpDate").val(currentDate);
+
+        // Set current time
+        var currentTime = new Date().toLocaleTimeString("en-US", {
+          hour12: false,
+        });
+        $("#pickupTime").val(currentTime);
+
+        // Check if time input has a value, and add "filled" class to the label
+        if ($("#pickupTime").val().length > 0) {
+          $("#timePickerIcon").addClass("filled");
+        }
+
+        // Add event listener for time input focus
+        $("#pickupTime").on("focus", function () {
+          $("#timePickerIcon").addClass("filled");
+        });
+
+        // Add event listener for time input blur (when focus is lost)
+        $("#pickupTime").on("blur", function () {
+          if ($(this).val().length === 0) {
+            $("#timePickerIcon").removeClass("filled");
+          }
+        });
+      });
+
+      // Form validation
+
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var phone = document.getElementById("phone").value;
+        var startDestination =
+          document.getElementById("startDestination").value;
+        var endDestination = document.getElementById("endDestination").value;
+        var pickUpDate = document.getElementById("pickUpDate").value;
+        var pickupTime = document.getElementById("pickupTime").value;
+
+        // Validate non-empty fields
+        if (
+          !username ||
+          !phone ||
+          !startDestination ||
+          !endDestination ||
+          !pickUpDate ||
+          !pickupTime
+        ) {
+          alert("Please fill in all the required fields.");
+          return;
+        }
+
+        // Validate mobile number
+        var phoneRegex = /^[0-9]{3}-[0-9]{2}-[0-9]{3}$/;
+        if (!phone.match(phoneRegex)) {
+          alert("Please enter a valid mobile number.");
+          return;
+        }
+
+        // If all validations pass, you can submit the form or take further action
+        alert("Form submitted successfully!");
+
+        // page redirection
+      }
+    </script>
+  </body>
+</html>

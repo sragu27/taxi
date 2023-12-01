@@ -1,0 +1,703 @@
+/* banner */
+.banner__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.banner__content h1 .ban__title {
+  display: block;
+}
+.banner__item {
+  width: 45%;
+}
+.banner__img img {
+  width: 100%;
+}
+.banner__content__item h5 {
+  font-size: 1.3rem;
+  font-family: var(--semibold);
+  color: var(--black);
+}
+.banner__content__item h1 {
+  font-size: 3.3rem;
+  font-family: var(--bold);
+  color: black;
+}
+
+.banner__content__item p {
+  font-size: 1rem;
+  font-family: var(--regular);
+  color: black;
+}
+.banner__content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.booking__wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+/* scroll section */
+.customer__row {
+  padding: 10px;
+}
+
+.customer__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@-webkit-keyframes s_scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes s_scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: 6px 10px 30px -10px;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: s_scroll 10s linear infinite;
+  animation: s_scroll 10s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.customer__wrapper {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.slide img {
+  width: 250px;
+  height: 100px;
+}
+.slider .slide:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 3; /* Bring the hovered slide to the top */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+}
+
+/* Our services  */
+.services__title {
+  text-align: center;
+}
+.services__wrapper {
+  margin-top: 40px;
+}
+.services__demo {
+  margin-top: 50px;
+}
+.services__title h1 {
+  font-family: var(--bold);
+  color: var(--black);
+  font-size: 3rem;
+}
+.services__title h5 {
+  font-size: 1.2rem;
+  color: var(--black);
+  font-family: var(--semibold);
+}
+.services__carousel .services__item h3 {
+  font-family: var(--bold);
+  color: var(--black);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.services__item__title {
+  margin-top: 10px;
+}
+.services__item .service__item__img {
+  margin-top: 16px;
+}
+.services__carousel .services__item {
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
+  padding: 12px 16px;
+  border: 1px solid #aaa;
+}
+.services__btn {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.services__btn .svc-btn {
+  background: var(--orange);
+}
+.services__demo {
+  background-color: var(--white);
+}
+.services__item .services__item__desc p {
+  font-size: 1rem;
+  font-family: var(--regular);
+  color: var(--black);
+  text-align: justify;
+}
+.services__item .services__item__desc {
+  margin-top: 12px;
+}
+
+.owl-carousel .owl-stage {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* work section css */
+.work__title {
+  text-align: center;
+}
+.work__title h1 {
+  font-family: var(--bold);
+  color: var(--black);
+  font-size: 3rem;
+}
+.work__section {
+  margin-top: 60px;
+}
+.work__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.work__item img {
+  width: 100%;
+}
+.work__item {
+  text-align: center;
+}
+.work__item p {
+  font-size: 1rem;
+  font-family: var(--medium);
+  color: var(--black);
+}
+/* book now */
+.book__item h2 .b-cont {
+  display: block;
+}
+.book__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.book__section {
+  margin-top: 50px;
+  background: var(--nileBlue);
+}
+.book__wrapper {
+  padding: 62px 16px;
+}
+.book__item h2 {
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--semibold);
+}
+.book__item p {
+  background: var(--orange);
+  padding: 10px 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  font-family: var(--regular);
+  font-size: 1rem;
+}
+.bk-btn {
+  color: var(--orange);
+  font-size: 1rem;
+  font-family: var(--medium);
+}
+.bk-btn:hover {
+  color: var(--black);
+}
+/* Reserve vechicle  */
+.vehicle_reserve_section {
+  margin-top: 60px;
+}
+
+.brd__bottom {
+  border-bottom: 2px solid var(--orange);
+  width: 100%;
+}
+
+.vehicle__reserve__banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  row-gap: 36px;
+}
+
+.veh__res__item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px;
+  padding: 16px 16px;
+  border-radius: 5px;
+  height: 400px;
+}
+.veh__res__item h6 {
+  font: 1.5rem var(--semibold);
+  color: var(--black);
+}
+.veh__res__item p {
+  font: 1rem var(--medium);
+  color: var(--black);
+}
+.taxi__footer__row {
+  margin-top: 40px;
+}
+
+.veh__res__item img {
+  width: 100%;
+}
+
+.veh__res__ban__box {
+  margin-top: 80px;
+}
+.service__provide__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.svc__pde__item {
+  width: 30%;
+  text-align: justify;
+}
+.svc__pde__item img {
+  width: 100%;
+  border-radius: 15px;
+}
+.service__provide__sec {
+  margin-top: 60px;
+  background-color: #f3f3f3;
+}
+.service__provide__wrapper {
+  padding: 60px 16px;
+}
+.svc__pde__item h2 {
+  margin: 16px 0px;
+  font: 1.8rem var(--bold);
+  color: var(--black);
+}
+.why__choose__sec {
+  margin-top: 60px;
+}
+.wy__chs_title {
+  text-align: center;
+}
+.wy__choose__taxi {
+  width: 90%;
+  margin: 0 auto;
+}
+.wh__ch__txi__box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.ch__taxi__item {
+  width: 45%;
+}
+.ch__taxi__item p {
+  font-size: 16px;
+  color: gray;
+  margin-top: 10px;
+}
+.ch__taxi__item img {
+  width: 100%;
+}
+.taxi__points__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.txi__lst img {
+  width: 30px;
+}
+.taxi__points__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  row-gap: 50px;
+}
+.why__choose__taxi__points {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.taxi__points__item {
+  width: 45%;
+}
+.taxi__stand__icon img {
+  width: 100%;
+}
+.taxi__standard__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.taxi__stand__item {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  row-gap: 16px;
+}
+.taxi__stand__icon {
+  width: 80px;
+}
+.taxi__standard__sec {
+  margin-top: 60px;
+}
+.taxi__stand__banner h2 {
+  margin-bottom: 16px;
+  font: 1.5rem var(--medium);
+}
+.btn__bookNow {
+  background-color: var(--orange);
+  padding: 12px 22px;
+  border-radius: 6px;
+  font: 1rem var(--medium);
+  color: var(--black);
+  margin-top: 22px;
+}
+.journey__sec {
+  margin-top: 80px;
+}
+.jouney__container {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px;
+  text-align: center;
+  padding: 20px 20px;
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+}
+.journey__row {
+  display: flex;
+  justify-content: center;
+}
+.jouney__container h4 {
+  font: 2rem var(--semibold);
+  color: var(--black);
+}
+.taxi__footer__sec {
+  margin-top: 80px;
+  position: relative;
+}
+/* booking form */
+
+.form-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-item input,
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: solid 2px #ccc;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-item input:focus {
+  border-color: var(--marine);
+}
+.form-item label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  padding: 0 10px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+.form-item input:focus + label,
+.form-item input:valid + label,
+.form-item select:focus + label,
+.form-item select:valid + label {
+  font-size: 11px;
+  top: -5px;
+}
+
+.form-item input:focus + label,
+.form-item select:focus + label,
+.form-item input[type="time"]:focus + label {
+  color: var(--orange);
+}
+.form-item select:focus + label,
+.form-item select:valid + label {
+  color: var(--orange);
+}
+
+.form-item input[type="time"] + label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  padding: 0 10px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+.form-item input[type="time"]:focus + label,
+.form-item input[type="time"]:valid + label {
+  font-size: 11px;
+  top: -5px;
+}
+.form-item input time:valid + label {
+  font-size: 11px;
+  top: -5px;
+}
+
+*,
+*:focus {
+  outline: none;
+}
+.form_user_item {
+  width: 48%;
+}
+.form__user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+.taxi_form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-family: var(--semibold);
+  color: var(--black);
+}
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font: 1rem var(--medium);
+}
+.booking__form__container {
+  width: 500px;
+}
+.taxi_form {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  padding: 22px;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: slide-up 0.6s ease-out;
+}
+.banner__box {
+  margin-top: 60px;
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.form-item input[type="time"] + label.filled {
+  font-size: 11px;
+  top: -5px;
+}
+
+/* Media query */
+@media only screen and (max-width: 1024px) {
+  .booking__form__container {
+    width: 100%;
+  }
+  .book__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .veh__res__item {
+    width: 30%;
+    gap: 5%;
+    height: 350px;
+  }
+  .veh__res__ban__box {
+    margin-top: 40px;
+  }
+  .svc__pde__item h2 {
+    font: 1.5rem var(--bold);
+  }
+  .svc__pde__item {
+    width: 32%;
+  }
+  .service__provide__row {
+    gap: 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sub__header {
+    display: none;
+  }
+  .banner__item {
+    width: 100%;
+  }
+  .banner__row {
+    row-gap: 50px;
+  }
+  .booking__form__container {
+    width: 600px;
+  }
+  .work__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+  .book__wrapper {
+    padding: 28px 16px;
+  }
+  .book__item h2 {
+    font-size: 1.6rem;
+  }
+  .veh__res__item {
+    width: 48%;
+    gap: 5%;
+    height: 400px;
+  }
+  .vehicle__reserve__banner {
+    gap: 4%;
+    row-gap: 30px;
+  }
+  .svc__pde__item {
+    width: 48%;
+  }
+  .service__provide__row {
+    gap: 4%;
+    row-gap: 30px;
+  }
+  .wy__choose__taxi {
+    width: 100%;
+  }
+
+  .taxi__standard__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    row-gap: 30px;
+  }
+  .taxi__stand__item {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+}
+@media only screen and (max-width: 734px) {
+}
+@media only screen and (max-width: 684px) {
+}
+@media only screen and (max-width: 667px) {
+}
+
+@media only screen and (max-width: 414px) {
+}
+
+@media only screen and (max-width: 412px) {
+}
+
+@media only screen and (max-width: 375px) {
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: rb-bold;
+  src: url(../fonts/bold.ttf);
+}
+@font-face {
+  font-family: rb-semibold;
+  src: url(../fonts/semibold.ttf);
+}
+@font-face {
+  font-family: rb-medium;
+  src: url(../fonts/medium.ttf);
+}
+@font-face {
+  font-family: rb-regular;
+  src: url(../fonts/regular.ttf);
+}
